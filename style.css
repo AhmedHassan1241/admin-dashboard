@@ -1,0 +1,161 @@
+:root{
+    --Main-color:#E5E5E5;
+    --Text-color:#717171
+}
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--Main-color);
+    color: var(--Text-color);
+}
+.container{
+    display: flex;
+    height: 100vh;
+    justify-content: space-between;
+}
+
+aside{
+    background-color: white;
+    box-shadow: 17px 5px 14px 20px #cccccc;
+    padding: 5px 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+    width:300px;
+    height: 820px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    box-shadow:0px 0px 12px 4px #cccccc;
+    padding: 5px;
+}
+.logo h1{
+    color: var(--Text-color);
+    font-family: cursive;
+    font-size: 22px;
+}
+.tabs{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+.tabs a , i{
+    color: var(--Text-color);
+}
+.tab{
+    letter-spacing: 2px;
+    padding: 5px;
+}
+.tab i{
+    font-size: small;
+    font-weight:bold ;
+}
+.tab:hover{
+    background-color: rgb(160, 154, 145);
+    border-radius: 3px;
+    color: white;
+}
+#selected i{
+        background-color: var(--Text-color);
+        border-radius: 3px;
+        width: 100%;
+        color: white;
+        padding: 10px;
+}
+.tabQ{
+    margin: 85px 0;
+}
+main{
+    padding: 10px;
+    margin: 0 25px;
+    width: 70%;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    
+}
+.search input{
+width:350px ;
+border-radius: 2px;
+border: none;
+padding: 10px;
+}
+.img{
+    display: flex;
+    align-items: center;
+    gap:10px
+}
+.img i{
+    padding: 10px;
+    background-color: white;
+    border-radius: 50%;
+}
+.img img{
+    padding: 10px;
+    background-color: white;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+.sHeader{
+    margin: 35px ;
+}
+.div1{
+    display: flex;
+    flex-direction: column;
+}
+
+.dataInput{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+section{
+    margin: 30px 0;
+    padding: 10px;
+    background-color: white;
+    min-width: 446px;
+}
+table{
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+}
+table th{
+    border-bottom: 1px solid black;    
+    padding-bottom: 10px;
+}
+
+table td{
+    padding: 15px 0;
+    border: 1px solid var(--Text-color);
+}
+
+/* ////////////////////////////////////////////////////////////// */
+@media only screen and (max-width: 1080px){
+    .container{
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: start;
+    }
+    aside, .logo{
+        width: 100%;
+        align-items: center;
+    }
+    .tabQ{
+margin-right:10% ;    
+}
+    aside{
+        margin: 0 0 20px 0;
+        padding: 15px;
+    }
+
+}
